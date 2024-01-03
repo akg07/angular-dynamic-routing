@@ -12,6 +12,9 @@
       ],
       "users": [
         "dist/users"
+      ],
+      "utils": [
+        "dist/utils"
       ]
     },
     "outDir": "./dist/out-tsc",
