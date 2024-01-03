@@ -8,6 +8,7 @@ import { PlansComponent } from 'projects/plans/src/lib/plans/plans.component';
 import { UsersListComponent } from 'projects/users/src/lib/users-list/users-list.component';
 import { UsersViewComponent } from 'projects/users/src/lib/users-view/users-view.component';
 import { ManageUserComponent } from 'projects/users/src/lib/manage-user/manage-user.component';
+import { NotFoundComponent } from 'projects/utils/src/lib/not-found/not-found.component';
 
 @Injectable({
   providedIn: 'root'
@@ -34,14 +35,16 @@ export class RouteConfigService {
           { path: 'user-list', component: UsersListComponent },
           { path: 'user-view', component: UsersViewComponent},
           { path: 'user-manage', component: ManageUserComponent},
+          { path: '**', component: NotFoundComponent }
         ]
       },
       // Right works
       'JCHBJHD-KJDD-KJBDKBF': {
         routes: [
-          { path: '/dashboard', component: DashboardComponent},
-          { path: 'application0-list', component: ApplicationListComponent },
-          { path: 'application-view', component: ApplicationViewComponent }, 
+          { path: 'dashboard', component: DashboardComponent},
+          { path: 'application-list', component: ApplicationListComponent },
+          { path: 'application-view', component: ApplicationViewComponent },
+          { path: '**', component: NotFoundComponent }
         ]
       }
     };

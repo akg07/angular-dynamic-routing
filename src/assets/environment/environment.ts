@@ -1,5 +1,5 @@
 export const enviornment = {
-    cilent_name: "Right Works",
-    client_id: "JCHBJHD-KJDD-KJBDKBF",
-    orchUrl: "http://localhost:2500"
+    cilent_name: "CPA",
+    client_id: "JCJNFMGHD-KSDHFD-KJSJASBF",
+    orchUrl: "http://localhost:4500"
 }
