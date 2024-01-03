@@ -12,6 +12,9 @@ import { UsersViewComponent } from './users-view/users-view.component';
     UsersViewComponent
   ],
   imports: [],
-  exports: []
+  exports: [
+    ManageUserComponent,
+    UsersListComponent,
+    UsersViewComponent]
 })
 export class UsersModule { }

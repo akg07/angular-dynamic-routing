@@ -14,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
   ],
   exports: [
+    LoaderComponent,
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class UtilsModule { }
