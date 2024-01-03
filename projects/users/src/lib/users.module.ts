@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
-import { UsersComponent } from './users.component';
+import { ManageUserComponent } from './manage-user/manage-user.component';
+import { UsersListComponent } from './users-list/users-list.component';
+import { UsersViewComponent } from './users-view/users-view.component';
 
 
 
 @NgModule({
   declarations: [
-    UsersComponent
+    ManageUserComponent,
+    UsersListComponent,
+    UsersViewComponent
   ],
-  imports: [
-  ],
-  exports: [
-    UsersComponent
-  ]
+  imports: [],
+  exports: []
 })
 export class UsersModule { }
