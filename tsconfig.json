@@ -6,6 +6,9 @@
     "paths": {
       "dashboard": [
         "dist/dashboard"
+      ],
+      "plans": [
+        "dist/plans"
       ]
     },
     "outDir": "./dist/out-tsc",

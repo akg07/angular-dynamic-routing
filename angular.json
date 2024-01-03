@@ -132,6 +132,39 @@
           }
         }
       }
+    },
+    "plans": {
+      "projectType": "library",
+      "root": "projects/plans",
+      "sourceRoot": "projects/plans/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/plans/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/plans/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/plans/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/plans/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
